@@ -1,4 +1,4 @@
-package com.database.utils;
+package databaseUtils;
 
 import java.io.IOException;
 import java.sql.Connection;

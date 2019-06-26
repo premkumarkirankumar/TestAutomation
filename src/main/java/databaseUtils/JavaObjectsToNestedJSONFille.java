@@ -1,4 +1,4 @@
-package com.database.utils;
+package databaseUtils;
 
 /*
 import java.io.File;
