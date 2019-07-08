@@ -36,7 +36,7 @@ public class stopDocker {
 			{
 
 				if (currentLine.contains("selenium-hub exited")) {
-					System.out.println("found my text");
+					System.out.println("Docker Started Successfully");
 					flag = true;// 14th seconds
 					break;
 				}

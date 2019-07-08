@@ -48,7 +48,7 @@ public class startDocker {
 			{
 
 				if (currentLine.contains("registered to the hub and ready to use")) {
-					System.out.println("found my text");
+					System.out.println("Docker Started Successfully");
 					flag = true;// 14th seconds
 					break;
 				}
