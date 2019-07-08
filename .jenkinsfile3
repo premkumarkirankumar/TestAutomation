@@ -38,7 +38,7 @@ stage('Release')
 {
 steps{
 echo 'releasing the project'
-bat "mvn clean test -Dsurefire.suiteXmlFiles=smoke.xml"
+bat "mvn clean test -Dsurefire.suiteXmlFiles=release.xml"
 }
 
 }
