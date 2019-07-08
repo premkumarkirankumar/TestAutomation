@@ -42,19 +42,6 @@ public class DockerTestChrome1 {
 		RemoteWebDriver driver = new RemoteWebDriver(u,capabilities);
 		driver.get("https://allegisgrouptest.service-now.com/sp");		
 		System.out.println(driver.getTitle());
-		driver.manage().window().maximize();
-		Thread.sleep(3000);
-		
-		driver.findElement(By.xpath("//input[@id='username']")).click();
-		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("NA User");
-		
-		driver.findElement(By.xpath("//input[@id='password']")).click();
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Snow2019");
-		
-		driver.findElement(By.xpath("//input[@name='c.remember_me']")).click();
-	
-		driver.findElement(By.xpath("//button[@name='login']")).click();
-		Thread.sleep(3000);
 		}
 
 
