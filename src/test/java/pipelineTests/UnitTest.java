@@ -9,7 +9,7 @@ public class UnitTest {
 	public void unit() throws Exception {
 		
 		System.out.println("Perfoming Unit Tests");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		}
 
 

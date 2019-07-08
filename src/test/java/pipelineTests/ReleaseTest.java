@@ -9,7 +9,7 @@ public class ReleaseTest {
 	public void unit() throws Exception {
 		
 		System.out.println("Release to Production");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		}
 
 

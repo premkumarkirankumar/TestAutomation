@@ -9,7 +9,7 @@ public class BuildTest {
 	public void build() throws Exception {
 		
 		System.out.println("Code to Build the code");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		}
 
 

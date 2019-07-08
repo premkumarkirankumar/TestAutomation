@@ -9,7 +9,7 @@ public class SmokeTest {
 	public void release() throws Exception {
 		
 		System.out.println("Performing Smoke Tests	");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		}
 
 
