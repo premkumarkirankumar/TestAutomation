@@ -36,9 +36,6 @@ bat "mvn test"
 }
 stage('Release')
 {
-when{
-branch "origin/master"
-}
 steps{
 echo 'releasing the project'
 bat "mvn clean test -Dsurefire.suiteXmlFiles=smoke.xml"
