@@ -1,0 +1,57 @@
+pipeline
+{
+agent any
+
+stages
+{
+stage('Build')
+{
+steps
+{
+bat "mvn clean"
+}
+
+}
+stage('deploy')
+{
+steps{
+echo 'deploying the code'
+bat "mvn clean test -Dsurefire.suiteXmlFiles=deploy1.xml"
+}
+
+}
+stage('Unit Tests')
+{
+steps{
+bat "mvn compile"
+}
+
+}
+stage('Smoke')
+{
+steps{
+echo 'Executing Smoke Tests'
+}
+
+}
+stage('Testing')
+{
+steps{
+bat "mvn test"
+}
+
+}
+stage('Release')
+{
+steps{
+echo 'releasing the project'
+bat "mvn clean test -Dsurefire.suiteXmlFiles=release.xml"
+}
+
+}
+
+
+
+}
+
+}
