@@ -16,7 +16,7 @@ public class SmokeTest {
 		System.setProperty("webdriver.chrome.driver", driverpath);
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://allegisgrouptest.service-now.com/sp");
+		driver.get("https://myit.allegistest.com/sp");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		

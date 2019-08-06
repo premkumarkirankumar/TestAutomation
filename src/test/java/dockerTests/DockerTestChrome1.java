@@ -2,8 +2,6 @@ package dockerTests;
 
 import java.io.IOException;
 import java.net.URL;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -40,7 +38,7 @@ public class DockerTestChrome1 {
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		URL u = new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(u,capabilities);
-		driver.get("https://allegisgrouptest.service-now.com/sp");		
+		driver.get("https://myit.allegistest.com/sp");		
 		System.out.println(driver.getTitle());
 		}
 

@@ -15,7 +15,7 @@ public class DockerTestChrome2 {
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		URL u = new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(u,capabilities);
-		driver.get("https://allegisgrouptest.service-now.com/sp");
+		driver.get("https://myit.allegistest.com/sp");
 		
 		System.out.println(driver.getTitle());
 		}
