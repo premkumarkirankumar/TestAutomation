@@ -9,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/java/cucumberFeatures",
 		glue="cucumberStepDefinations",
-		tags="@SmokeTest,@RegressionTest")
+		tags="@RegressionTest")
 
-public class TestRunnerjUnit  {
+public class TestRunnerRegressionTestsjUnit  {
 
 }
