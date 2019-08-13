@@ -17,13 +17,15 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 public class LoginPageStepDefination {
 	
-	public WebDriver driver;
+	WebDriver driver;
+	
+	public LoginPageStepDefination(BaseStepDefination bs){
+		driver=bs.startBrowser();
+	}
+	
 	
     @Given("^User is on Service Now login page$")
     public void user_is_on_service_now_login_page() throws Throwable {
-		String driverpath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", driverpath);
-		driver = new ChromeDriver();
 		driver.get("https://myit.allegistest.com/sp");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
@@ -104,9 +106,4 @@ public class LoginPageStepDefination {
 		driver.findElement(By.xpath("//img[@title='ServiceNow']")).isDisplayed();
     }
     
-    @And("^close browser$")
-    public void close_browser() throws Throwable {
-    	driver.close();
-    }
-
 }

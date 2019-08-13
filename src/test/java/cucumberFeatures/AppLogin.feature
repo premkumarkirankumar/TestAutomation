@@ -1,5 +1,10 @@
 Feature: Application Login
 
+
+Background: 
+Given Validate the browser
+When Browser is triggered
+
 @SmokeTest
 Scenario: Service Now Home Page correct login
 Given User is on Service Now login page
@@ -23,7 +28,7 @@ When User login into application with "Test" and "password"
 Then Service Now Home Page displayed is "false"
 And close browser
 
-@SmokeTest
+@RegressionTest
 Scenario: Service Now Home Page correct login with table
 Given User is on Service Now login page
 When User login into application with following details

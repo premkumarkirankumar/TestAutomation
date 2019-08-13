@@ -7,11 +7,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/java/cucumberFeatures",dryRun=false,
+		features="src/test/java/cucumberFeatures",dryRun=false,monochrome=true,strict=true,
 		glue="cucumberStepDefinations",
-		tags="@SmokeTest",
+		tags="@SmokeTest,@RegressionTest",
 		plugin= {"pretty","html:target/cucumber","json:target/cucumber.json","junit:target/cukes.xml"})
 
-public class TestRunnerSmokeTestsjUnit  {
+public class TestRunnerStrictjUnit  {
 
 }
