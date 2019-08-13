@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<!--
   <test thread-count="5" name="Test">
     <classes>
       <class name="dockerTests.DockerTestChrome1"/>
       <class name="dockerTests.DockerTestChrome2"/>
       <class name="dockerTests.DockerTestFirefox"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  Test -->
+  
+  
 </suite> <!-- Suite -->
