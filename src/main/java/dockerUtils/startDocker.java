@@ -22,8 +22,10 @@ public class startDocker {
 		
 		
 		boolean flag = false;
-		// execute the batch file for docker up instanct
+		// execute the batch file for docker up instance
 		Runtime runtime = Runtime.getRuntime();
+		System.out.println(System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat");
+		//runtime.exec("cmd /c start "+System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat");
 		runtime.exec("cmd /c start dockerUp.bat");
 
 		String f = "output.txt";

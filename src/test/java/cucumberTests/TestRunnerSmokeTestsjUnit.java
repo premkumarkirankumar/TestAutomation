@@ -1,4 +1,4 @@
-package cucumberOptions;
+package cucumberTests;
 
 import org.junit.runner.RunWith;
 
@@ -9,9 +9,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/java/cucumberFeatures",dryRun=false,
 		glue="cucumberStepDefinations",
-		tags="@SmokeTest,@RegressionTest",
+		tags="@SmokeTest",
 		plugin= {"pretty","html:target/cucumber","json:target/cucumber.json","junit:target/cukes.xml"})
 
-public class TestRunnerjUnit  {
+public class TestRunnerSmokeTestsjUnit  {
 
 }
