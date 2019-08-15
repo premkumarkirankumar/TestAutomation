@@ -33,7 +33,7 @@ public class LoginPageStepDefination {
     @When("^User login into application with username and password$")
     public void user_login_into_application_with_username_and_password() throws Throwable {
     	lp= new LoginPage(driver);
-		lp.login("NA End User", "SNOW1234");
+		lp.login("@NA End User", "SNOW1234");
     }
     
 

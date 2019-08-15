@@ -1,0 +1,69 @@
+Attaching to selenium-hub, dockerfiles_chrome_1, dockerfiles_firefox_1
+[36mselenium-hub    |[0m 2019-08-15 14:26:51,939 INFO Included extra file "/etc/supervisor/conf.d/selenium-hub.conf" during parsing
+[36mselenium-hub    |[0m 2019-08-15 14:26:51,942 INFO supervisord started with pid 7
+[36mselenium-hub    |[0m 2019-08-15 14:26:52,949 INFO spawned: 'selenium-hub' with pid 10
+[36mselenium-hub    |[0m Starting Selenium Hub with configuration:
+[36mselenium-hub    |[0m 2019-08-15 14:26:53,011 INFO success: selenium-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mselenium-hub    |[0m {
+[36mselenium-hub    |[0m   "host": "0.0.0.0",
+[36mselenium-hub    |[0m   "port": 4444,
+[36mselenium-hub    |[0m   "role": "hub",
+[36mselenium-hub    |[0m   "maxSession": 5,
+[36mselenium-hub    |[0m   "newSessionWaitTimeout": -1,
+[36mselenium-hub    |[0m   "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+[36mselenium-hub    |[0m   "throwOnCapabilityNotPresent": true,
+[36mselenium-hub    |[0m   "jettyMaxThreads": -1,
+[36mselenium-hub    |[0m   "cleanUpCycle": 5000,
+[36mselenium-hub    |[0m   "browserTimeout": 0,
+[36mselenium-hub    |[0m   "timeout": 1800,
+[36mselenium-hub    |[0m   "debug": false
+[36mselenium-hub    |[0m }
+[33mchrome_1        |[0m 2019-08-15 14:26:53,373 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[33mchrome_1        |[0m 2019-08-15 14:26:53,376 INFO supervisord started with pid 7
+[32mfirefox_1       |[0m 2019-08-15 14:26:53,430 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[32mfirefox_1       |[0m 2019-08-15 14:26:53,433 INFO supervisord started with pid 7
+[36mselenium-hub    |[0m 14:26:53.658 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+[36mselenium-hub    |[0m 14:26:53.837 INFO [GridLauncherV3.lambda$buildLaunchers$5] - Launching Selenium Grid hub on port 4444
+[36mselenium-hub    |[0m 2019-08-15 14:26:54.274:INFO::main: Logging initialized @1222ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[33mchrome_1        |[0m 2019-08-15 14:26:54,379 INFO spawned: 'xvfb' with pid 10
+[33mchrome_1        |[0m 2019-08-15 14:26:54,382 INFO spawned: 'selenium-node' with pid 11
+[32mfirefox_1       |[0m 2019-08-15 14:26:54,435 INFO spawned: 'xvfb' with pid 10
+[32mfirefox_1       |[0m 2019-08-15 14:26:54,437 INFO spawned: 'selenium-node' with pid 11
+[36mselenium-hub    |[0m 14:26:54.629 INFO [Hub.start] - Selenium Grid hub is up and running
+[36mselenium-hub    |[0m 14:26:54.637 INFO [Hub.start] - Nodes should register to http://172.20.0.2:4444/grid/register/
+[36mselenium-hub    |[0m 14:26:54.638 INFO [Hub.start] - Clients should connect to http://172.20.0.2:4444/wd/hub
+[33mchrome_1        |[0m Connecting to the Hub using the host selenium-hub and port 4444
+[33mchrome_1        |[0m 2019-08-15 14:26:54,649 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33mchrome_1        |[0m 2019-08-15 14:26:54,649 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mfirefox_1       |[0m Connecting to the Hub using the host selenium-hub and port 4444
+[32mfirefox_1       |[0m 2019-08-15 14:26:54,704 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mfirefox_1       |[0m 2019-08-15 14:26:54,704 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33mchrome_1        |[0m 14:26:55.167 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+[32mfirefox_1       |[0m 14:26:55.237 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+[33mchrome_1        |[0m 14:26:55.473 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+[32mfirefox_1       |[0m 14:26:55.499 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+[33mchrome_1        |[0m 2019-08-15 14:26:55.809:INFO::main: Logging initialized @1151ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[32mfirefox_1       |[0m 2019-08-15 14:26:55.823:INFO::main: Logging initialized @1098ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[32mfirefox_1       |[0m 14:26:56.311 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+[33mchrome_1        |[0m 14:26:56.314 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+[33mchrome_1        |[0m 14:26:56.519 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+[33mchrome_1        |[0m 14:26:56.521 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+[32mfirefox_1       |[0m 14:26:56.537 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+[32mfirefox_1       |[0m 14:26:56.537 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+[33mchrome_1        |[0m 14:26:56.624 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+[32mfirefox_1       |[0m 14:26:56.678 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+[33mchrome_1        |[0m 14:26:57.473 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://selenium-hub:4444/grid/register
+[32mfirefox_1       |[0m 14:26:57.505 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://selenium-hub:4444/grid/register
+[32mUnexpected API error for dockerfiles_firefox_1 (HTTP code 502)
+Response body:
+Bad response from Docker engine
+
+[0m[36mUnexpected API error for selenium-hub (HTTP code 500)
+Response body:
+A blocking operation was interrupted by a call to WSACancelBlockingCall.
+
+[0m[33mUnexpected API error for dockerfiles_chrome_1 (HTTP code 500)
+Response body:
+A blocking operation was interrupted by a call to WSACancelBlockingCall.
+
+[0m

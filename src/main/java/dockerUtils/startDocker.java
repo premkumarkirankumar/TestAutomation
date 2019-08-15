@@ -9,6 +9,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class startDocker {
+	
+	
+	//@Test
+	public void teststart() throws IOException {
+		// execute the batch file for docker up instance
+		Runtime runtime = Runtime.getRuntime();
+		System.out.println(System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat");
+	//	String command= System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat";
+	//	runtime.exec("cmd /c start "+command);
+		
+		String command= System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat";
+		ProcessBuilder pb = new ProcessBuilder("cmd.exe", "/c", command);
+		pb.start();
+	}
+	
 
 	@Test
 	public void startFile() throws IOException, InterruptedException {
@@ -25,7 +40,7 @@ public class startDocker {
 		// execute the batch file for docker up instance
 		Runtime runtime = Runtime.getRuntime();
 		System.out.println(System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat");
-		//runtime.exec("cmd /c start "+System.getProperty("user.dir")+"\\dockerFiles\\dockerUp.bat");
+
 		runtime.exec("cmd /c start dockerUp.bat");
 
 		String f = "output.txt";
