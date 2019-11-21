@@ -45,7 +45,7 @@ public class automationPractice4 {
 		 * "\\src\\test\\resources\\drivers\\chromedriver.exe";
 		 * System.setProperty("webdriver.chrome.driver", driverpath); WebDriver driver =
 		 * new ChromeDriver();
-		 */
+		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -85,7 +85,7 @@ public class automationPractice4 {
 		}
 
 		driver.quit();
-
+ */
 	}
 
 }

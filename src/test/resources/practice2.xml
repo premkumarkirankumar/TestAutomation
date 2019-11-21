@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test" parallel="tests">
     <classes>
-      <class name="pipelineTests.practiceSeleniumTest"/>
+      <class name="pipelineTests.apiTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

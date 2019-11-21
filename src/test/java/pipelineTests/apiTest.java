@@ -23,21 +23,27 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class automationPractice5 {
+public class apiTest {
 
 	WebDriver driver = null;
 
-	@Test(invocationCount = 1, threadPoolSize = 1000)
+	@Test(invocationCount = 2000
+			, threadPoolSize = 500)
 	public void testCase1() throws Exception {
-		///*
-		 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		 URL u = new URL("http://10.62.234.23:4444/wd/hub");
+	//	/*
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		 //URL u = new URL("http://10.62.234.101:30001/wd/hub");
+        URL u = new URL("http://10.62.234.105:30001/wd/hub");
+		// URL u = new URL("http://10.62.234.140:4444/wd/hub");
+		// URL u = new URL("http://10.62.234.118:4444/wd/hub");
+		// URL u = new URL("http://10.62.234.20:4444/wd/hub");
+		// URL u = new URL("http://10.62.234.23:4444/wd/hub");
 		// URL u = new URL("http://10.62.234.21:4444/wd/hub");
 		 //URL u = new URL("http://10.68.36.99:4444/wd/hub");
 		// URL u = new
 		// URL("http://dockerselenium.eastus2.cloudapp.azure.com:4444/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(u, capabilities);
-		// */
+	//	*/
 	
 		/*
 		System.out.println("Performing Smoke Tests	");
@@ -55,7 +61,7 @@ public class automationPractice5 {
 		
 		
 		//System.out.println(driver.getPageSource().contains("id"));;
-		System.out.println(driver.getPageSource());
+		//System.out.println(driver.getPageSource());
 		
 
 

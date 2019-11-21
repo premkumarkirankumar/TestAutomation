@@ -17,19 +17,20 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class automationPractice3 {
+public class bbcTest {
 
 
 	WebDriver driver = null;
 
-	@Test(invocationCount =500, threadPoolSize = 500)
+	@Test(invocationCount =500, threadPoolSize = 1000)
 	public void testCase1() throws Exception {
 		///*
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		URL u = new URL("http://10.62.234.100:30001/wd/hub");
 		//URL u = new URL("http://10.62.234.22:4444/wd/hub");
 		//URL u = new URL("http://10.62.234.20:4444/wd/hub");
 		//URL u = new URL("http://10.68.36.99:4444/wd/hub");
-		URL u = new URL("http://dockerselenium.eastus2.cloudapp.azure.com:4444/wd/hub");
+		//URL u = new URL("http://dockerselenium.eastus2.cloudapp.azure.com:4444/wd/hub");
 
 		RemoteWebDriver driver = new RemoteWebDriver(u,capabilities);
 		//*/
@@ -39,7 +40,7 @@ public class automationPractice3 {
 		System.setProperty("webdriver.chrome.driver", driverpath);
 		WebDriver driver = new ChromeDriver();
 		*/
-		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebDriverWait wait=new WebDriverWait(driver, 60);
 
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
