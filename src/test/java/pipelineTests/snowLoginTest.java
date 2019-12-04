@@ -13,21 +13,20 @@ import java.net.URL;
 
 public class snowLoginTest {
 
-	@Test(invocationCount = 300
-			, threadPoolSize = 1000)
+	@Test(invocationCount = 1, threadPoolSize = 1000)
 	public void smoke() throws Exception {
 
 		System.out.println("Performing Smoke Tests	");
-
+/*
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		URL u = new URL("http://10.62.234.105:30001/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(u, capabilities);
-
-		/*
+*/
+//      /*
 		String driverpath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", driverpath);
 		WebDriver driver = new ChromeDriver();
-		 */
+//		 */
 
 
 		driver.get("https://myit.allegistest.com/sp");
