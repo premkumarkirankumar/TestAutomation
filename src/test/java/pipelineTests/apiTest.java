@@ -1,20 +1,11 @@
 package pipelineTests;
 
-import static org.testng.Assert.assertTrue;
-
-
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
-
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,9 +23,9 @@ public class apiTest {
 	public void testCase1() throws Exception {
 	//	/*
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		URL u = new URL("http://10.68.36.99:4444/wd/hub");
-		//URL u = new URL("http://10.62.234.105:30001/wd/hub");
-		//URL u = new URL("http://10.62.234.101:30001/wd/hub");
+		 //URL u = new URL("http://10.62.234.101:30001/wd/hub");
+       // URL u = new URL("http://10.62.234.105:30001/wd/hub");
+        URL u = new URL("http://10.68.36.99:4444/wd/hub");
 		// URL u = new URL("http://10.62.234.140:4444/wd/hub");
 		// URL u = new URL("http://10.62.234.118:4444/wd/hub");
 		// URL u = new URL("http://10.62.234.20:4444/wd/hub");
