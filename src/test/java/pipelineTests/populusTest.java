@@ -13,8 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 public class populusTest {
 
-	@Test(invocationCount =500
-			, threadPoolSize = 500)
+	@Test(invocationCount =200
+			, threadPoolSize =200)
 	public void smoke() throws Exception {
 
 		System.out.println("Performing Smoke Tests On Times of Populus site	");
@@ -23,7 +23,12 @@ public class populusTest {
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
        // URL u = new URL("http://10.62.234.101:30001/wd/hub");
        // URL u = new URL("http://10.62.234.105:30001/wd/hub");
-        URL u = new URL("http://10.68.36.99:4444/wd/hub");
+      //  URL u = new URL("http://10.62.234.105:30755/wd/hub");
+       // URL u = new URL("http://lb.zalenium-ns.10.62.234.105.xip.io//wd/hub");
+      //  URL u = new URL("http://cosld-sysapp18.allegistest.com/wd/hub"); 
+       
+        URL u = new URL("http://10.62.234.41/wd/hub"); 
+  
 
 		RemoteWebDriver driver = new RemoteWebDriver(u, capabilities);
 
