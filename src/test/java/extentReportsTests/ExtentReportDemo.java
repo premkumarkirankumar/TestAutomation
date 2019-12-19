@@ -9,11 +9,11 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
  
-public class ExtendtReportDemo 
+public class ExtentReportDemo 
 {
  
 	@Test
-	public void loginTest() throws IOException
+	public void loginTest1() throws IOException
 	{    
             // Create Object of ExtentHtmlReporter and provide the path where you want to generate the report 
             // I used (.) in path where represent the current working directory
