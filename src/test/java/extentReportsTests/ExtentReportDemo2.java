@@ -1,7 +1,11 @@
 package extentReportsTests;
 import java.io.IOException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -39,11 +43,19 @@ public class ExtentReportDemo2
 	{
 
 		
-		String driverpath = System.getProperty("user.dir") + "//src//test//resources//drivers//chromedriver";
-		System.setProperty("webdriver.chrome.driver", driverpath);
+		//String driverpath = System.getProperty("user.dir") + "//src//test//resources//drivers//chromedriver";
+		//System.setProperty("webdriver.chrome.driver", driverpath);
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+
+		URL u = new URL("http://10.62.234.22:4444/wd/hub"); 
+
+		
+		RemoteWebDriver driver = new RemoteWebDriver(u, capabilities);
 		
 		
-		driver=new ChromeDriver();
+		
+		//driver=new ChromeDriver();
 		driver.get("http://www.google.com");
 		System.out.println("title is "+driver.getTitle());
 		Assert.assertTrue(driver.getTitle().contains("Allegis"));
